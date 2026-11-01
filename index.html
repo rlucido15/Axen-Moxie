@@ -259,7 +259,9 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
 .mxa .more .qa:first-child{border-top:0}
 
 /* close headline */
-.mxa .close .lead{max-width:760px;margin-bottom:clamp(32px,4vw,48px)}
+.mxa .close .lead{margin-bottom:clamp(32px,4vw,48px)}
+.mxa .close .lead p{max-width:760px}
+@media (min-width:761px){.mxa .close .lead h2{white-space:nowrap}}
 .mxa .close .lead p{font-size:clamp(17px,1.6vw,20px);margin-top:14px}
 
 /* v3 motion */
