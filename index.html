@@ -40,7 +40,12 @@
 .mxa .lockup{display:flex;align-items:center;gap:clamp(12px,2vw,22px)}
 .mxa .lockup img{height:clamp(40px,5vw,56px);width:auto}
 .mxa .lockup .x{font-family:var(--cond);font-weight:700;font-size:clamp(26px,3vw,36px);color:var(--teal);line-height:1}
-.mxa .tag{font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--navy);text-align:right;line-height:1.4}
+.mxa .hcall{text-align:right;line-height:1.2}
+.mxa .hcall .eyebrow{font-size:12px}
+.mxa .hcall .q{font-weight:700;font-size:15px;color:var(--navy);margin-top:3px}
+.mxa .hphone{display:inline-flex;align-items:center;gap:8px;font-family:var(--cond);font-weight:800;font-size:28px;line-height:1;color:var(--navy);white-space:nowrap;margin-top:4px}
+.mxa .hphone:hover{color:var(--teal)}
+.mxa .hphone svg{display:none;width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
 /* hero */
 .mxa .hero{padding:var(--section) 0 calc(var(--section) * .85)}
@@ -314,7 +319,9 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
   .mxa .sticky .btn{width:100%;font-size:21px;padding:16px 20px}
 }
 @media (max-width:640px){
-  .mxa .tag{display:none}
+  .mxa .hcall .eyebrow,.mxa .hcall .q,.mxa .hphone span{display:none}
+  .mxa .hphone{width:46px;height:46px;border-radius:50%;background:var(--tint);color:var(--navy);justify-content:center;margin:0}
+  .mxa .hphone svg{display:block}
   .mxa .hero .btn{display:flex;width:100%}
   .mxa .proof .div{display:none}
   .mxa .grid{grid-template-columns:1fr}
@@ -383,7 +390,11 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
       <span class="x" aria-hidden="true">×</span>
       <img src="assets/axen-realty.png" alt="Axen Realty" width="323" height="160">
     </div>
-    <div class="tag">Homebuyer<br>Advantage</div>
+    <div class="hcall">
+      <p class="eyebrow">Questions?</p>
+      <p class="q">Call Moxie Mortgage</p>
+      <a class="hphone" data-mxa="phone-link" href="tel:+10000000000" data-track="call_header" aria-label="Call Moxie Mortgage"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span data-mxa="phone">(XXX) XXX-XXXX</span></a>
+    </div>
   </div></div>
 
   <div class="hero"><div class="wrap">
