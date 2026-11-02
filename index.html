@@ -276,6 +276,15 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
 .mxa.anim .band .big span{opacity:0;transform:translateY(24px);transition:opacity .8s ease .25s,transform .8s cubic-bezier(.2,.7,.2,1) .25s}
 .mxa.anim .band.in .big span{opacity:1;transform:none}
 
+.mxa{overflow-x:clip}
+.mxa .proof.proof-m{display:none}
+.mxa .tile .n em,.mxa .tile .n small{color:var(--navy)}
+/* more air between the CTA sections */
+.mxa .close{padding:calc(var(--section) * 1.15) 0 calc(var(--section) * 1.15)}
+.mxa .close .lead{margin-bottom:clamp(40px,5vw,72px)}
+.mxa .soft{padding-bottom:calc(var(--section) * 1.15)}
+.mxa .soft + .legal{margin-top:0}
+
 @media (max-width:1000px){
   .mxa .hero .split{grid-template-columns:1fr}
   .mxa .calc{max-width:560px}
@@ -320,6 +329,49 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
   .mxa .fsubmit .btn{width:100%}
   .mxa .legal .wrap{flex-direction:column;gap:20px}
 }
+/* mobile & tablet: give stacked sections room to breathe */
+@media (max-width:1000px){
+  .mxa .hero .calc{margin-top:52px}
+  .mxa .proof{margin-top:48px}
+}
+@media (max-width:640px){
+  .mxa{--section:76px}
+  .mxa .hero{padding-top:56px}
+  .mxa .hero .btn{margin-top:30px}
+  .mxa .hero .calc{margin-top:56px;padding:22px 20px}
+  .mxa .calc .total .amt{font-size:46px}
+  /* on phones the proof strip moves into "Everything else you get with Moxie" */
+  .mxa .hero .proof{display:none}
+  .mxa .proof.proof-m{display:flex;margin:24px 0 0;padding:0;border-top:0;justify-content:flex-start;flex-wrap:wrap;gap:10px 14px}
+  .mxa .proof-m .div{display:block;height:24px}
+  .mxa .proof-m .p{font-size:13px;gap:6px;white-space:nowrap}
+  .mxa .proof-m .stars svg{width:13px;height:13px}
+  .mxa .proof-m .glogo{height:16px}
+  .mxa .proof-m .award img{width:30px;height:30px}
+  .mxa .proof-m .sg{display:none}
+  .mxa .proof-m [data-mxa="rating-pre"]{display:none}
+  .mxa .tiles{margin-top:28px}
+  .mxa .tile,.mxa .tile:nth-child(odd){padding:22px 0 22px 18px}
+  .mxa .tile:nth-child(odd){padding-left:0}
+  .mxa .tile .n{font-size:52px}
+  .mxa .tile .n em,.mxa .tile .n small{color:var(--navy)}
+  .mxa .tile .l span{font-size:14px}
+  .mxa .band{padding:72px 0}
+  .mxa .band .big{font-size:52px}
+  .mxa .how{padding:44px 22px}
+  .mxa .steps{gap:40px;margin-top:32px}
+  .mxa .feature .rgrid{margin-top:36px;gap:16px}
+  .mxa .faq .head{gap:28px}
+  .mxa .qa summary{padding:24px 0}
+  .mxa .close .lead{margin-bottom:36px}
+  .mxa .close .row{gap:44px}
+  .mxa .soft .box{padding:28px 22px}
+  .mxa .soft .fgrid{gap:18px}
+  .mxa .legal{padding:40px 0 56px}
+}
+
+@media (max-width:380px){.mxa .proof-m .div{display:none!important}}
+
 @media (prefers-reduced-motion:reduce){.mxa *{transition:none!important;scroll-behavior:auto!important}}
 </style>
 
@@ -369,7 +421,7 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
       <span class="div" aria-hidden="true"></span>
       <div class="p award" data-mxa="award">
         <img src="assets/scotsman-top-originator.png" alt="" width="72" height="72">
-        <span><b>Scotsman Guide</b> Top Originator</span>
+        <span><b class="sg">Scotsman Guide </b>Top Originator</span>
       </div>
     </div>
   </div></div>
@@ -377,6 +429,19 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
   <div class="stack"><div class="wrap">
     <p class="eyebrow" data-reveal>And that's just the start</p>
     <h2 data-reveal>Everything else you get with Moxie</h2>
+    <div class="proof proof-m" aria-label="Why buyers trust Moxie">
+      <div class="p rating">
+        <span class="stars" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg>
+        </span>
+        <span class="rtxt"><b data-mxa="rating">5-star</b> <span data-mxa="rating-pre">rated on</span> <img class="glogo" src="assets/google.png" alt="Google" width="147" height="48"><span data-mxa="rating-count"></span></span>
+      </div>
+      <span class="div" aria-hidden="true"></span>
+      <div class="p award" data-mxa="award">
+        <img src="assets/scotsman-top-originator.png" alt="" width="72" height="72">
+        <span><b class="sg">Scotsman Guide </b>Top Originator</span>
+      </div>
+    </div>
     <div class="tiles" data-reveal>
       <div class="tile"><div class="n">300<em>+</em></div><div class="l">Lenders shopped<span>Wholesale pricing, no retail markup</span></div></div>
       <div class="tile"><div class="n">12<small>DAYS</small></div><div class="l">To close, in as few as<sup>2</sup><span>In-house underwriting</span></div></div>
@@ -637,9 +702,9 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
         var rating = Number(d.rating != null ? d.rating : d.averageRating);
         var count = Number(d.count != null ? d.count : (d.user_ratings_total != null ? d.user_ratings_total : d.totalReviews));
         if (rating) {
-          $('[data-mxa="rating"]').textContent = rating.toFixed(1);
-          $('[data-mxa="rating-pre"]').textContent = "on";
-          if (count) $('[data-mxa="rating-count"]').textContent = "· " + count.toLocaleString() + " reviews";
+          $$('[data-mxa="rating"]').forEach(function (el) { el.textContent = rating.toFixed(1); });
+          $$('[data-mxa="rating-pre"]').forEach(function (el) { el.textContent = "on"; });
+          if (count) $$('[data-mxa="rating-count"]').forEach(function (el) { el.textContent = "· " + count.toLocaleString() + " reviews"; });
         }
         var list = (d.reviews || []).filter(function (r) {
           return (r.rating == null || Number(r.rating) >= 5) && (r.text || r.comment);
