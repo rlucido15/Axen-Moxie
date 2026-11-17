@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Up to $5,000 Toward Closing Costs | Moxie Mortgage × Axen Realty</title>
-<meta name="description" content="Buy with an Axen Realty agent and finance with Moxie Mortgage to get a lender credit of 0.50% of your loan amount, up to $5,000, toward closing costs. Terms apply.">
+<title>Up to $1,000 Toward Closing Costs | Moxie Mortgage × Axen Realty</title>
+<meta name="description" content="Buy with an Axen Realty agent and finance with Moxie Mortgage to get a lender credit of up to $1,000 toward closing costs. Terms apply.">
 <meta name="robots" content="noindex">
-<meta property="og:title" content="Your agent comes with a $5,000 advantage">
-<meta property="og:description" content="Buy with Axen. Finance with Moxie. Get up to $5,000 toward your closing costs.">
+<meta property="og:title" content="Your agent comes with a $1,000 advantage">
+<meta property="og:description" content="Buy with Axen. Finance with Moxie. Get up to $1,000 toward your closing costs.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#02B5D0">
 <style>html,body{margin:0;background:#fff}</style>
@@ -216,8 +216,8 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
 .mxa .calc .r.credit .tagx i{width:22px;height:22px;border-radius:50%;background:var(--teal);color:#fff;font-style:normal;font-family:var(--cond);font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center}
 .mxa .calc .r.credit b{color:var(--teal);font-family:var(--cond);font-weight:800;font-size:28px;line-height:1}
 .mxa .calc .bar{position:relative;height:14px;border-radius:999px;background:#E6EEF2;margin-top:24px;overflow:hidden}
-.mxa .calc .bar .pay{position:absolute;left:0;top:0;bottom:0;width:75%;background:var(--navy);border-radius:999px 0 0 999px}
-.mxa .calc .bar .cr{position:absolute;right:0;top:0;bottom:0;width:25%;background:var(--teal);border-radius:0 999px 999px 0}
+.mxa .calc .bar .pay{position:absolute;left:0;top:0;bottom:0;width:88.9%;background:var(--navy);border-radius:999px 0 0 999px}
+.mxa .calc .bar .cr{position:absolute;right:0;top:0;bottom:0;width:11.1%;background:var(--teal);border-radius:0 999px 999px 0}
 .mxa .calc .legend{display:flex;justify-content:space-between;font-size:13px;margin-top:8px}
 .mxa .calc .legend span{display:inline-flex;align-items:center;gap:6px}
 .mxa .calc .legend span::before{content:"";width:10px;height:10px;border-radius:3px;background:var(--navy)}
@@ -227,6 +227,8 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
 .mxa .calc .total .lbl s{display:block;font-weight:500;color:var(--ink);opacity:.7;font-size:14px}
 .mxa .calc .total .amt{font-family:var(--cond);font-weight:800;font-size:clamp(44px,4.6vw,60px);line-height:.9;color:var(--navy);font-variant-numeric:tabular-nums}
 .mxa .calc .fine{font-size:12px;line-height:1.5;margin-top:18px;color:var(--ink)}
+.mxa .calc .pct{margin:8px 0 0!important;text-align:right;font-weight:700;font-size:15px;color:var(--orange)}
+.mxa .hero .team{margin:14px 0 0!important;font-size:15px;font-weight:600;color:var(--ink)}
 
 /* big-number tiles */
 .mxa .tiles{display:grid;grid-template-columns:repeat(4,1fr);margin-top:40px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
@@ -241,7 +243,8 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
 /* emotion band */
 .mxa .band{background:var(--teal);padding:clamp(64px,9vw,128px) 0;margin-bottom:var(--section);text-align:center;position:relative;overflow:hidden}
 .mxa .band .big{font-family:var(--cond);font-weight:800;text-transform:uppercase;color:#fff;font-size:clamp(48px,8.5vw,128px);line-height:.88;letter-spacing:-.005em}
-.mxa .band .big span{display:block;color:var(--navy)}
+.mxa .band .big > span{display:block;color:var(--navy)}
+.mxa .band .big .nw{font-style:normal;white-space:nowrap}
 .mxa .band .sub{font-size:clamp(17px,1.6vw,21px);font-weight:500;color:var(--navy);margin-top:24px}
 .mxa .band .micon{position:absolute;right:-4vw;top:50%;transform:translateY(-50%);height:130%;width:auto;max-width:none;opacity:.12;pointer-events:none;user-select:none}
 .mxa .band .wrap{position:relative}
@@ -255,7 +258,23 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
 .mxa .feature .stars svg{width:22px;height:22px}
 .mxa .feature .who{font-weight:700;font-size:16px;color:var(--navy);margin-top:10px}
 .mxa .feature .who span{font-weight:400;color:var(--ink)}
-.mxa .feature .rgrid{margin-top:48px;grid-template-columns:repeat(auto-fit,minmax(260px,380px));justify-content:center}
+.mxa .feature .rgrid{margin-top:48px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+
+
+/* payment-drop protection block */
+.mxa .paydrop{padding-top:var(--section)}
+.mxa .pd{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:center;border:1px solid var(--rule);border-radius:20px;padding:clamp(28px,4.5vw,56px);position:relative;overflow:hidden}
+.mxa .pd::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--teal)}
+.mxa .pd h2{max-width:14em}
+.mxa .pd-sub{font-size:clamp(16px,1.5vw,19px);margin-top:16px;max-width:30em}
+.mxa .pd-list{list-style:none;display:grid;gap:16px}
+.mxa .pd-list li{display:flex;gap:14px;align-items:flex-start;font-size:17px;line-height:1.4}
+.mxa .pd-list b{color:var(--navy);font-weight:700}
+.mxa .pd .ck{flex:0 0 28px;width:28px;height:28px;border-radius:50%;background:var(--tint);display:flex;align-items:center;justify-content:center}
+.mxa .pd .ck svg{width:15px;height:15px;stroke:var(--teal);fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.mxa .pd-proof{margin-top:22px;padding-top:18px;border-top:1px solid var(--rule);font-size:15px}
+.mxa .pd-proof b{font-family:var(--cond);font-weight:800;font-size:26px;color:var(--teal);margin-right:4px}
+@media (max-width:1000px){.mxa .pd{grid-template-columns:1fr}}
 
 /* faq: show 3, tuck the rest */
 .mxa .more>summary{list-style:none;display:inline-flex;align-items:center;gap:10px;margin-top:22px;cursor:pointer;font-weight:700;font-size:16px;color:var(--navy);text-decoration:underline;text-underline-offset:4px}
@@ -266,6 +285,8 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
 /* close headline */
 .mxa .close .lead{margin-bottom:clamp(32px,4vw,48px)}
 .mxa .close .lead p{max-width:760px}
+.mxa .close .lead h2 .nw,.mxa .soft h3 .nw,.mxa .feature blockquote .nw{white-space:nowrap}
+@media (max-width:640px){.mxa .cta .t{white-space:nowrap;font-size:min(38px,calc((100vw - 100px) / 6.3))}}
 @media (min-width:761px){.mxa .close .lead h2{white-space:nowrap}}
 .mxa .close .lead p{font-size:clamp(17px,1.6vw,20px);margin-top:14px}
 
@@ -278,11 +299,23 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
 .mxa .calc .total .amt{transform-origin:right bottom}
 .mxa.anim .calc.go .r.credit{opacity:1;transform:none}
 .mxa.anim .calc.go .bar .cr{transform:none}
-.mxa.anim .band .big span{opacity:0;transform:translateY(24px);transition:opacity .8s ease .25s,transform .8s cubic-bezier(.2,.7,.2,1) .25s}
-.mxa.anim .band.in .big span{opacity:1;transform:none}
+.mxa.anim .band .big > span{opacity:0;transform:translateY(24px);transition:opacity .8s ease .25s,transform .8s cubic-bezier(.2,.7,.2,1) .25s}
+.mxa.anim .band.in .big > span{opacity:1;transform:none}
 
 .mxa{overflow-x:clip}
+/* headline sizing keeps "$1,000 advantage." together on one line (no orphan word) */
+@media (min-width:1001px){.mxa .hero h1{font-size:min(80px,6.8vw)}}
+@media (max-width:640px){.mxa .hero h1{font-size:min(46px,calc((100vw - 44px) / 6.9))}}
 /* guard against host-site styles if this code is pasted directly into a page */
+.mxa ul,.mxa ol{padding:0!important;margin-left:0!important;margin-right:0!important;list-style:none!important}
+.mxa ul>li,.mxa ol>li{margin-left:0!important;padding-left:0!important;list-style:none!important}
+.mxa ul>li::marker,.mxa ol>li::marker{content:none}
+.mxa figure.rcard{margin:0!important;padding:28px 28px 24px!important;box-sizing:border-box!important;display:flex!important;flex-direction:column;text-align:left;border:0!important}
+.mxa figure.rcard .stars{justify-content:flex-start;margin-top:0!important}
+.mxa figure.rcard q{flex:1;margin:14px 0 0!important;padding:0!important;border:0!important;background:none!important}
+.mxa figure.rcard figcaption.who{margin:18px 0 0!important;padding:0!important;font-size:14px;font-weight:700;color:var(--navy)}
+.mxa figure.rcard figcaption.who span{font-weight:500;color:var(--ink)}
+.mxa .feature blockquote{margin:12px 0 0!important;padding:0!important;border:0!important;background:none!important}
 .mxa figure.calc{margin:0!important;padding:clamp(24px,3vw,36px)!important;box-sizing:border-box!important}
 .mxa .top .lockup img{height:clamp(40px,5vw,56px)!important;width:auto!important;max-width:none!important;display:block!important}
 .mxa img{border:0!important;box-shadow:none!important}
@@ -393,36 +426,38 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
       <span class="x" aria-hidden="true">×</span>
       <img src="https://rlucido15.github.io/Axen-Moxie/assets/axen-realty.png" alt="Axen Realty" width="323" height="160">
     </div>
-    <div class="hcall">
+    <div class="hright"><div class="langsw" role="group" aria-label="Language / Idioma"><button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button><button type="button" data-lang="es" aria-pressed="false" lang="es">ES</button></div><div class="hcall">
       <p class="eyebrow">Questions?</p>
       <p class="q">Call Moxie Mortgage</p>
       <a class="hphone" data-mxa="phone-link" href="tel:+14806602518" data-track="call_header" aria-label="Call Moxie Mortgage"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span data-mxa="phone">480.660.2518</span></a>
-    </div>
+    </div></div>
   </div></div>
 
   <div class="hero"><div class="wrap">
     <div class="split">
       <div>
-        <p class="eyebrow">Buying a home with an Axen Realty agent?</p>
-        <h1>Your agent comes with <span class="nw">a <span class="money"><span class="sr">$5,000</span><span class="count" aria-hidden="true" data-to="5000">$5,000</span></span></span> advantage.</h1>
-        <p class="lede short">Buy with Axen. Finance with Moxie. Get <b>up to $5,000</b> toward your closing costs.<sup>1</sup></p>
+        <p class="eyebrow">Buying a home with an Axen Realty&nbsp;agent?</p>
+        <h1>Your agent comes with a <span class="nw"><span class="money"><span class="sr">$1,000</span><span class="count" aria-hidden="true" data-to="1000">$1,000</span></span> advantage.</span></h1>
+        <p class="lede short">Buy with Axen. Finance with Moxie. Get <b>up to $1,000</b> toward your closing costs.<sup>1</sup></p>
+        <p class="team">Moxie is Axen Realty&rsquo;s dedicated loan team with NEXA&nbsp;Lending.</p>
         <a class="btn" id="mxa-hero-cta" href="https://apply.moxiemortgage.com" target="_top" data-track="apply_hero" data-claim>Claim your credit
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
       </div>
 
-      <figure class="calc" data-mxa="calc" aria-label="Illustrative example: on a $1,000,000 loan with $20,000 in estimated closing costs, a $5,000 credit lowers closing costs to $15,000">
-        <div class="ch"><span class="eyebrow">Illustrative example</span><span class="loan">$1,000,000 loan</span></div>
+      <figure class="calc" data-mxa="calc" aria-label="Illustrative example: on a $300,000 loan with $9,000 in estimated closing costs, a $1,000 credit lowers closing costs to $8,000">
+        <div class="ch"><span class="eyebrow">Illustrative example</span><span class="loan">$300,000 loan</span></div>
         <div class="rows">
-          <div class="r"><span>Estimated closing costs</span><b>$20,000</b></div>
-          <div class="r credit"><span class="tagx"><i aria-hidden="true">−</i>Moxie × Axen credit</span><b>−$5,000</b></div>
+          <div class="r"><span>Estimated closing costs</span><b>$9,000</b></div>
+          <div class="r credit"><span class="tagx"><i aria-hidden="true">−</i>Moxie × Axen credit</span><b>−$1,000</b></div>
         </div>
         <div class="bar" aria-hidden="true"><span class="pay"></span><span class="cr"></span></div>
         <div class="legend" aria-hidden="true"><span>You pay</span><span class="t">Credit covers</span></div>
         <div class="total">
-          <div class="lbl">Your closing costs<s>$20,000</s></div>
-          <div class="amt" data-mxa="calc-total">$15,000</div>
+          <div class="lbl">Your closing costs<s>$9,000</s></div>
+          <div class="amt" data-mxa="calc-total">$8,000</div>
         </div>
-        <figcaption class="fine">Example only, not a guarantee. Assumes a $1,000,000 loan with $20,000 in estimated closing costs. Your costs and credit will vary.<sup>1</sup></figcaption>
+        <p class="pct">That&rsquo;s 11% less at&nbsp;closing</p>
+        <figcaption class="fine">Example only, not a guarantee. Assumes a $300,000 loan with $9,000 in estimated closing costs. Your costs and credit will vary.<sup>1</sup></figcaption>
       </figure>
     </div>
 
@@ -446,16 +481,16 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
     </div>
     <div class="tiles" data-reveal>
       <div class="tile"><div class="n">300<em>+</em></div><div class="l">Lenders shopped<span>Wholesale pricing, no retail markup</span></div></div>
-      <div class="tile"><div class="n">12<small>DAYS</small></div><div class="l">Avg clear to close<sup>2</sup></div></div>
-      <div class="tile"><div class="n">0</div><div class="l">Office visits needed<span>Get pre-approved online in minutes</span></div></div>
-      <div class="tile"><div class="n">48</div><div class="l">States we lend in<span>FHA, VA, USDA, jumbo &amp; more</span></div></div>
+      <div class="tile"><div class="n">15<small>DAYS</small></div><div class="l">Avg clear to close<sup>2</sup></div></div>
+      <div class="tile"><div class="n">0.559<small>%</small></div><div class="l">Lower average rate<sup>3</sup><span>vs. the nation's largest retail lender</span></div></div>
+      <div class="tile"><div class="n">51</div><div class="l">States &amp; territories<span>FHA, VA, USDA, jumbo &amp; more</span></div></div>
     </div>
   </div></div>
 
   <div class="band" data-reveal>
     <img class="micon" src="https://rlucido15.github.io/Axen-Moxie/assets/moxie-m.png" alt="" aria-hidden="true">
     <div class="wrap">
-      <p class="big">Keys in hand.<span>Less out of pocket.</span></p>
+      <p class="big">Keys in hand.<span>Less out <em class="nw">of pocket.</em></span></p>
       <p class="sub">That's the Moxie × Axen advantage.</p>
     </div>
   </div>
@@ -471,14 +506,30 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
     </div>
   </div>
 
-  <div class="feature reviews" data-mxa="reviews" hidden><div class="wrap">
+  <div class="paydrop"><div class="wrap"><div class="pd" data-reveal>
+    <div class="pd-l">
+      <p class="eyebrow">After you buy</p>
+      <h2>Your payment should drop when rates&nbsp;do.<sup>4</sup></h2>
+      <p class="pd-sub">If rates fall after you close, Moxie covers up to $2,300 in lender fees when you refinance, so more of the savings stay with you.</p>
+    </div>
+    <div class="pd-r">
+      <ul class="pd-list">
+        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><b>Up to $2,300</b> in lender fees covered per refinance</span></li>
+        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><b>Every 6 payments</b>, whenever rates drop</span></li>
+        <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span><b>For as long as you own</b> the home</span></li>
+      </ul>
+      <p class="pd-proof"><b>$911/mo</b> saved by Justin across two refinances with Moxie.<sup>4</sup></p>
+    </div>
+  </div></div></div>
+
+  <div class="feature reviews" data-mxa="reviews"><div class="wrap">
     <div class="fq" data-reveal>
       <div class="mark" aria-hidden="true">&ldquo;</div>
-      <blockquote data-mxa="feature-quote"></blockquote>
+      <blockquote data-mxa="feature-quote">Moxie is always quick to respond, available whenever my clients need him &mdash; even on weekends&hellip; Having a lender I can fully trust makes a huge difference in <span class="nw">my business.</span></blockquote>
       <div class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg></div>
-      <p class="who" data-mxa="feature-who"></p>
+      <p class="who" data-mxa="feature-who">Coni O., Realtor&reg; <span>· Verified Google review</span></p>
     </div>
-    <div class="rgrid" data-mxa="review-list"></div>
+    <div class="rgrid" data-mxa="review-list"><figure class="rcard"><div class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg></div><q>Highly recommend the team at Moxie! They are very quick to respond and always provide solutions to any challenges I have. I know my clients are in the best hands, feeling informed and supported throughout their home purchase process.</q><figcaption class="who">Natalie M., Realtor&reg; <span>· Verified Google review</span></figcaption></figure><figure class="rcard"><div class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg></div><q>Robert and Moxie did a great job getting my first time buyers loan closed in 19 days. We had a small glitch just before closing and Robert went above and beyond to be sure we closed on our contract close date.</q><figcaption class="who">Jodi A., Realtor&reg; <span>· Verified Google review</span></figcaption></figure><figure class="rcard"><div class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-5.9 3.4 1.4-6.7L2.4 9.4l6.8-.7z"/></svg></div><q>Alex is the best! Very helpful, knowledgeable, and resourceful. She kept the process moving from start to finish. My clients were able to purchase their condo right on time and just before the holidays!</q><figcaption class="who">Ricardo S., Realtor&reg; <span>· Verified Google review</span></figcaption></figure></div>
   </div></div>
 
   <div class="faq"><div class="wrap"><div class="head">
@@ -512,7 +563,7 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
   <div class="close"><div class="wrap">
     <div class="lead" data-reveal>
       <p class="eyebrow">Ready when you are</p>
-      <h2>Get pre-approved before your next showing.</h2>
+      <h2>Get pre-approved before your <span class="nw">next showing.</span></h2>
       <p>Sellers take pre-approved buyers more seriously. It takes minutes, and it's the first step to claiming your credit.</p>
     </div>
     <div class="row">
@@ -533,7 +584,7 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
   <div class="soft" id="mxa-soft"><div class="wrap"><div class="box" data-reveal>
     <div class="intro">
       <p class="eyebrow">Not ready to apply?</p>
-      <h3>Get a quick call instead</h3>
+      <h3>Get a quick <span class="nw">call instead</span></h3>
       <p>Tell us a little about your plans and a Moxie loan officer will reach out to answer your questions. No application, no pressure.</p>
     </div>
 
@@ -568,7 +619,7 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
 
   <div class="legal"><div class="wrap">
     <div>
-      <p><b>1</b> Buyers who use an Axen Realty agent for their purchase and finance through Moxie Mortgage, a division of Nexa Lending, may be eligible for a lender credit equal to 0.50% of the final loan amount, up to $5,000. Available on purchase transactions with eligible loan programs. The credit may be applied to eligible closing costs and/or prepaid items; it may not be applied to the down payment or paid as cash back. Loan terms, borrower, and property must meet applicable investor and program guidelines, and the credit may be reduced per investor or regulatory guidelines. This offer may not be combined with any other discount or offer. Moxie Mortgage may change or end this offer at any time. <b>2</b> Closing timelines vary by borrower, property, and third-party factors and are not guaranteed.</p>
+      <p><b>1</b> Buyers who use an Axen Realty agent for their purchase and finance through Moxie Mortgage, a division of Nexa Lending, may be eligible for a lender credit of $1,000 on loan amounts of $250,000 or more, or $500 on loan amounts under $250,000. Available on purchase transactions with eligible loan programs; one credit per transaction. The credit may not exceed actual closing costs. The credit may be applied to eligible closing costs and/or prepaid items; it may not be applied to the down payment or paid as cash back. Loan terms, borrower, and property must meet applicable investor and program guidelines, and the credit may be reduced per investor or regulatory guidelines. This offer may not be combined with any other discount or offer on the purchase loan; it does not affect eligibility for the Moxie no-cost refinance benefit on a future refinance (see note 4). Moxie Mortgage may change or end this offer at any time. <b>2</b> Average days from application to clear to close on Moxie Mortgage purchase loans. Closing timelines vary by borrower, property, and third-party factors and are not guaranteed. <b>3</b> Based on an apples-to-apples comparison of Moxie Mortgage's weekly rates with those of the nation's largest retail lender (Rocket Mortgage), November 2025 to November 2026, averaging 0.559% lower. Individual rates vary based on credit, loan amount, property, and market conditions; this is not a promise of savings or a commitment to lend. <b>4</b> Moxie no-cost refinance benefit: Moxie applies a lender credit toward loan origination costs, up to $2,300 per refinance; other closing costs may apply. Available once every 6 payments for as long as you own the home financed through Moxie, subject to continued qualification under underwriting standards and program terms, which may change. Refinancing does not guarantee a lower payment or savings and may extend your loan term and/or increase total interest paid. The $911 monthly reduction reflects one client's actual results across two refinances and is not a guarantee of future results.</p>
       <p>All loans are subject to credit approval, underwriting, and property eligibility; not all applicants will qualify. This is not a commitment to lend. Moxie Mortgage is a division of Nexa Lending. Nexa Lending and Axen Realty are affiliated companies. Each is a separate legal entity with its own management and governance structure, and use of either company is optional. <b>Nexa Lending NMLS #1660690</b> · <a href="https://www.nmlsconsumeraccess.org" target="_blank" rel="noopener">www.NMLSConsumerAccess.org</a> · Licensed in 48 states · Equal Housing Lender.</p>
     </div>
     <div class="ehl" role="img" aria-label="Equal Housing Lender">
@@ -588,7 +639,7 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
       <button class="mclose" type="button" data-close aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
       <p class="eyebrow">Step 1 of 2</p>
       <h3 id="mxa-claim-title">Claim your credit</h3>
-      <p class="msub">Tell us who you are so your loan officer can flag your file for the Axen credit of up to $5,000. Next, you'll start your application.<sup>1</sup></p>
+      <p class="msub">Tell us who you are so your loan officer can flag your file for the Axen credit of up to $1,000. Next, you'll start your application.<sup>1</sup></p>
       <form class="fgrid one" data-mxa="claim-form" novalidate>
         <div class="f"><label for="mxa-c-name">Full name</label><input id="mxa-c-name" name="name" autocomplete="name" required><span class="err" aria-live="polite"></span></div>
         <div class="f"><label for="mxa-c-phone">Mobile phone</label><input id="mxa-c-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required><span class="err" aria-live="polite"></span></div>
@@ -606,7 +657,78 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
 
 </section>
 
-<script>
+<style>
+.mxa .hright{display:flex!important;align-items:center;gap:22px}
+.mxa .langsw{display:inline-flex!important;align-items:center;gap:2px;border:1px solid var(--rule);border-radius:999px;padding:3px;background:#fff;margin:0}
+.mxa .langsw button{appearance:none;-webkit-appearance:none;border:0!important;margin:0!important;background:none;color:var(--ink);font-family:var(--body,Barlow),Barlow,Arial,sans-serif;font-weight:700;font-size:13px;letter-spacing:.08em;line-height:1;padding:8px 11px!important;border-radius:999px;cursor:pointer;min-width:0;box-shadow:none!important;text-transform:none}
+.mxa .langsw button[aria-pressed="true"]{background:var(--navy);color:#fff}
+.mxa .langsw button:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+@media (max-width:600px){
+ #mxa .hright{gap:8px}
+ #mxa .langsw{border:0;padding:0;background:none}
+ #mxa .langsw button[aria-pressed="true"]{display:none}
+ #mxa .langsw button{width:46px;height:46px;padding:0!important;border-radius:50%;background:var(--tint);color:var(--navy);font-size:13px;display:inline-flex;align-items:center;justify-content:center}
+}
+@media (max-width:640px){#mxa[lang="es"] .hero h1{font-size:min(46px,calc((100vw - 44px) / 7.6))!important}}
+@media (max-width:360px){
+ #mxa .top .wrap{gap:12px!important}
+ #mxa .top .lockup{gap:8px!important}
+ #mxa .top .lockup img{height:28px!important}
+ #mxa .top .lockup .x{font-size:20px!important}
+ #mxa .langsw button,#mxa .hphone{width:40px!important;height:40px!important}
+}
+</style><script>
+(function () {
+  var TEXT = {"Highly recommend the team at Moxie! They are very quick to respond and always provide solutions to any challenges I have. I know my clients are in the best hands, feeling informed and supported throughout their home purchase process.": "¡Recomiendo mucho al equipo de Moxie! Responden muy rápido y siempre tienen soluciones para cualquier reto que tenga. Sé que mis clientes están en las mejores manos, informados y apoyados durante todo el proceso de compra de su casa.", "Robert and Moxie did a great job getting my first time buyers loan closed in 19 days. We had a small glitch just before closing and Robert went above and beyond to be sure we closed on our contract close date.": "Robert y Moxie hicieron un gran trabajo cerrando el préstamo de mis compradores de primera vez en 19 días. Tuvimos un pequeño problema justo antes del cierre y Robert hizo mucho más de lo necesario para asegurar que cerráramos en la fecha del contrato.", "Alex is the best! Very helpful, knowledgeable, and resourceful. She kept the process moving from start to finish. My clients were able to purchase their condo right on time and just before the holidays!": "¡Alex es la mejor! Muy servicial, conocedora y llena de recursos. Mantuvo el proceso avanzando de principio a fin. ¡Mis clientes pudieron comprar su condominio a tiempo y justo antes de las fiestas!", "Moxie is always quick to respond, available whenever my clients need him — even on weekends… Having a lender I can fully trust makes a huge difference in": "Moxie siempre responde rápido y está disponible cuando mis clientes lo necesitan, incluso los fines de semana… Tener un prestamista en quien puedo confiar por completo hace una gran diferencia en", "my business.": "mi negocio.", "Robert and team did amazing! As a first-time homebuyer, each step of the way I was met with knowledge, quick responses, questions answered and an accurate timeline to make sure I would close in a timely manner.": "¡Robert y su equipo lo hicieron increíble! Siendo mi primera compra de casa, en cada paso recibí conocimiento, respuestas rápidas, todas mis preguntas contestadas y un calendario preciso para asegurar que cerrara a tiempo.", "Questions?": "¿Preguntas?", "Call Moxie Mortgage": "Llama a Moxie Mortgage", "Buying a home with an Axen Realty agent?": "¿Vas a comprar casa con un agente de Axen Realty?", "Your agent comes with a": "Tu agente viene con", "advantage.": "de ventaja.", "Buy with Axen. Finance with Moxie. Get": "Compra con Axen. Financia con Moxie. Recibe", "up to $1,000": "hasta $1,000", "toward your closing costs.": "para tus costos de cierre.", "Moxie is Axen Realty’s dedicated loan team with NEXA Lending.": "Moxie es el equipo de préstamos dedicado de Axen Realty con NEXA Lending.", "Claim your credit": "Reclama tu crédito", "Illustrative example": "Ejemplo ilustrativo", "$300,000 loan": "Préstamo de $300,000", "Estimated closing costs": "Costos de cierre estimados", "Moxie × Axen credit": "Crédito Moxie × Axen", "You pay": "Tú pagas", "Credit covers": "El crédito cubre", "Your closing costs": "Tus costos de cierre", "That’s 11% less at closing": "Eso es 11% menos al cierre", "Example only, not a guarantee. Assumes a $300,000 loan with $9,000 in estimated closing costs. Your costs and credit will vary.": "Solo un ejemplo, no una garantía. Supone un préstamo de $300,000 con $9,000 en costos de cierre estimados. Tus costos y tu crédito pueden variar.", "And that's just the start": "Y eso es solo el comienzo", "Everything else you get with Moxie": "Todo lo demás que recibes con Moxie", "5-star": "5 estrellas", "rated on": "en", "Scotsman Guide": "Scotsman Guide", "Top Originator": "Top Originator", "Lenders shopped": "Prestamistas comparados", "Wholesale pricing, no retail markup": "Precios de mayoreo, sin margen minorista", "DAYS": "DÍAS", "Avg clear to close": "Promedio hasta la aprobación final", "Lower average rate": "Tasa promedio más baja", "vs. the nation's largest retail lender": "vs. el mayor prestamista minorista del país", "States & territories": "Estados y territorios", "FHA, VA, USDA, jumbo & more": "FHA, VA, USDA, jumbo y más", "Keys in hand.": "Las llaves en la mano.", "Less out": "Menos de tu", "of pocket.": "bolsillo.", "That's the Moxie × Axen advantage.": "Esa es la ventaja Moxie × Axen.", "How it works": "Cómo funciona", "Finance with Moxie": "Financia con Moxie", "Get pre-approved with Moxie Mortgage in minutes.": "Obtén tu preaprobación con Moxie Mortgage en minutos.", "Buy with Axen": "Compra con Axen", "Find and buy your home with an Axen Realty agent.": "Encuentra y compra tu casa con un agente de Axen Realty.", "Save at closing": "Ahorra al cierre", "Your credit is applied to eligible closing costs.": "Tu crédito se aplica a los costos de cierre elegibles.", "After you buy": "Después de comprar", "Your payment should drop when rates do.": "Tu pago debería bajar cuando bajen las tasas.", "If rates fall after you close, Moxie covers up to $2,300 in lender fees when you refinance, so more of the savings stay with you.": "Si las tasas bajan después del cierre, Moxie cubre hasta $2,300 en cargos del prestamista cuando refinancies, para que más del ahorro se quede contigo.", "Up to $2,300": "Hasta $2,300", "in lender fees covered per refinance": "en cargos del prestamista cubiertos por refinanciamiento", "Every 6 payments": "Cada 6 pagos", ", whenever rates drop": ", cuando bajen las tasas", "For as long as you own": "Mientras seas dueño de", "the home": "la casa", "$911/mo": "$911/mes", "saved by Justin across two refinances with Moxie.": "ahorrados por Justin en dos refinanciamientos con Moxie.", "Robert and his team provided a speedy and FLAWLESS execution in our": "Robert y su equipo hicieron un trabajo rápido e IMPECABLE en nuestro", "loan process.": "proceso de préstamo.", "· Verified Google review": "· Reseña verificada de Google (traducida)", "They held our hand every step of the way, explaining every detail with patience and clarity.": "Nos acompañaron en cada paso, explicando cada detalle con paciencia y claridad.", "Calvin made what is usually a stressful process completely seamless.": "Calvin hizo que un proceso que suele ser estresante fuera totalmente sencillo.", "Our loan officer, Alex, went above and beyond to ensure a smooth and seamless process from start to finish.": "Nuestro oficial de préstamos, Alex, hizo mucho más de lo necesario para que todo fuera fácil y sin problemas de principio a fin.", "Good questions": "Buenas preguntas", "Before you ask": "Antes de que preguntes", "Straight answers to what buyers ask us most. Still wondering about something? Call us at": "Respuestas claras a lo que más nos preguntan los compradores. ¿Te queda alguna duda? Llámanos al", "What's the catch?": "¿Cuál es la trampa?", "No catch. Your credit shows up as a line item on your official Loan Estimate, so you'll see exactly what you're getting in writing in advance and then count all the savings on closing day.": "No hay trampa. Tu crédito aparece como una línea en tu Estimado de Préstamo oficial, así que verás por escrito y por adelantado exactamente lo que recibes, y luego contarás todo el ahorro el día del cierre.", "Can I use the credit toward my down payment?": "¿Puedo usar el crédito para mi pago inicial?", "No. Your down payment has to come from you, not the lender. The credit goes toward eligible closing costs and prepaid items, like lender and title fees or prepaid taxes and insurance. That lowers the cash you need at closing, so more of your savings can go toward your down payment or stay in your pocket.": "No. Tu pago inicial tiene que salir de ti, no del prestamista. El crédito se aplica a costos de cierre elegibles y gastos prepagados, como cargos del prestamista y de título, o impuestos y seguro prepagados. Eso reduce el efectivo que necesitas al cierre, para que más de tus ahorros vayan a tu pago inicial o se queden en tu bolsillo.", "I'm pre-approved with another lender. Is it too late to switch to Moxie?": "Ya tengo preaprobación con otro prestamista. ¿Es tarde para cambiarme a Moxie?", "No. You can switch to Moxie any time before you close. The earlier you switch, the better, so": "No. Puedes cambiarte a Moxie en cualquier momento antes del cierre. Mientras antes, mejor, así que", "get pre-approved with Moxie today": "obtén tu preaprobación con Moxie hoy", "More questions (1)": "Más preguntas (1)", "I don't have an Axen Realty agent yet. Can I still get the credit?": "Todavía no tengo agente de Axen Realty. ¿Puedo recibir el crédito?", "Yes, as long as an Axen Realty agent represents you on your purchase. Give us a call and we'll help you connect with one.": "Sí, siempre que un agente de Axen Realty te represente en tu compra. Llámanos y te ayudamos a conectar con uno.", "Ready when you are": "Listos cuando tú lo estés", "Get pre-approved before your": "Obtén tu preaprobación antes de tu", "next showing.": "próxima visita.", "Sellers take pre-approved buyers more seriously. It takes minutes, and it's the first step to claiming your credit.": "Los vendedores toman más en serio a los compradores preaprobados. Toma minutos, y es el primer paso para reclamar tu crédito.", "Apply online in minutes at": "Solicita en línea en minutos en", "Not ready to apply?": "¿Aún no estás listo para solicitar?", "Get a quick": "Recibe una", "call instead": "llamada rápida", "Tell us a little about your plans and a Moxie loan officer will reach out to answer your questions. No application, no pressure.": "Cuéntanos un poco sobre tus planes y un oficial de préstamos de Moxie te contactará para responder tus preguntas. Sin solicitud, sin presión.", "Full name": "Nombre completo", "Mobile phone": "Teléfono celular", "Email": "Email", "When are you hoping to buy?": "¿Cuándo esperas comprar?", "Choose one": "Elige una opción", "In the next 3 months": "En los próximos 3 meses", "3 to 6 months": "De 3 a 6 meses", "6 to 12 months": "De 6 a 12 meses", "Just exploring": "Solo estoy explorando", "Working with an Axen Realty agent?": "¿Trabajas con un agente de Axen Realty?", "Yes": "Sí", "Not yet": "Todavía no", "By clicking \"Request a call,\" you agree that Moxie Mortgage, a division of Nexa Lending, may contact you by phone, text, or email at the information provided, including with automated technology. Consent is not a condition of any purchase or loan. Message and data rates may apply. Reply STOP to opt out.": "Al hacer clic en \"Solicitar una llamada\", aceptas que Moxie Mortgage, una división de Nexa Lending, puede contactarte por teléfono, mensaje de texto o email a la información proporcionada, incluso con tecnología automatizada. El consentimiento no es una condición para ninguna compra o préstamo. Pueden aplicarse tarifas de mensajes y datos. Responde STOP para no recibir más mensajes.", "Request a call": "Solicitar una llamada", "Thanks! We'll be in touch soon.": "¡Gracias! Te contactaremos pronto.", "A Moxie loan officer will reach out shortly. Ready sooner?": "Un oficial de préstamos de Moxie te contactará en breve. ¿Listo antes?", "Start your application": "Empieza tu solicitud", "Buyers who use an Axen Realty agent for their purchase and finance through Moxie Mortgage, a division of Nexa Lending, may be eligible for a lender credit of $1,000 on loan amounts of $250,000 or more, or $500 on loan amounts under $250,000. Available on purchase transactions with eligible loan programs; one credit per transaction. The credit may not exceed actual closing costs. The credit may be applied to eligible closing costs and/or prepaid items; it may not be applied to the down payment or paid as cash back. Loan terms, borrower, and property must meet applicable investor and program guidelines, and the credit may be reduced per investor or regulatory guidelines. This offer may not be combined with any other discount or offer on the purchase loan; it does not affect eligibility for the Moxie no-cost refinance benefit on a future refinance (see note 4). Moxie Mortgage may change or end this offer at any time.": "Los compradores que usen un agente de Axen Realty para su compra y financien con Moxie Mortgage, una división de Nexa Lending, pueden ser elegibles para un crédito del prestamista de $1,000 en préstamos de $250,000 o más, o de $500 en préstamos menores de $250,000. Disponible en transacciones de compra con programas de préstamo elegibles; un crédito por transacción. El crédito no puede exceder los costos de cierre reales. El crédito puede aplicarse a costos de cierre elegibles y/o gastos prepagados; no puede aplicarse al pago inicial ni entregarse como efectivo. Los términos del préstamo, el prestatario y la propiedad deben cumplir con las guías aplicables del inversionista y del programa, y el crédito puede reducirse según las guías del inversionista o regulatorias. Esta oferta no se puede combinar con ningún otro descuento u oferta en el préstamo de compra; no afecta la elegibilidad para el beneficio de refinanciamiento sin costo de Moxie en un refinanciamiento futuro (ver nota 4). Moxie Mortgage puede cambiar o terminar esta oferta en cualquier momento.", "Average days from application to clear to close on Moxie Mortgage purchase loans. Closing timelines vary by borrower, property, and third-party factors and are not guaranteed.": "Promedio de días desde la solicitud hasta la aprobación final (clear to close) en préstamos de compra de Moxie Mortgage. Los plazos de cierre varían según el prestatario, la propiedad y factores de terceros, y no están garantizados.", "Based on an apples-to-apples comparison of Moxie Mortgage's weekly rates with those of the nation's largest retail lender (Rocket Mortgage), November 2025 to November 2026, averaging 0.559% lower. Individual rates vary based on credit, loan amount, property, and market conditions; this is not a promise of savings or a commitment to lend.": "Basado en una comparación equivalente de las tasas semanales de Moxie Mortgage con las del mayor prestamista minorista del país (Rocket Mortgage), de noviembre de 2025 a noviembre de 2026, con un promedio 0.559% más bajo. Las tasas individuales varían según el crédito, el monto del préstamo, la propiedad y las condiciones del mercado; esto no es una promesa de ahorro ni un compromiso de préstamo.", "Moxie no-cost refinance benefit: Moxie applies a lender credit toward loan origination costs, up to $2,300 per refinance; other closing costs may apply. Available once every 6 payments for as long as you own the home financed through Moxie, subject to continued qualification under underwriting standards and program terms, which may change. Refinancing does not guarantee a lower payment or savings and may extend your loan term and/or increase total interest paid. The $911 monthly reduction reflects one client's actual results across two refinances and is not a guarantee of future results.": "Beneficio de refinanciamiento sin costo de Moxie: Moxie aplica un crédito del prestamista a los costos de originación del préstamo, hasta $2,300 por refinanciamiento; pueden aplicarse otros costos de cierre. Disponible una vez cada 6 pagos mientras seas dueño de la casa financiada con Moxie, sujeto a que sigas calificando según los estándares de suscripción y los términos del programa, que pueden cambiar. Refinanciar no garantiza un pago más bajo ni ahorros, y puede extender el plazo de tu préstamo y/o aumentar el total de intereses pagados. La reducción mensual de $911 refleja los resultados reales de un cliente en dos refinanciamientos y no es una garantía de resultados futuros.", "All loans are subject to credit approval, underwriting, and property eligibility; not all applicants will qualify. This is not a commitment to lend. Moxie Mortgage is a division of Nexa Lending. Nexa Lending and Axen Realty are affiliated companies. Each is a separate legal entity with its own management and governance structure, and use of either company is optional.": "Todos los préstamos están sujetos a aprobación de crédito, suscripción y elegibilidad de la propiedad; no todos los solicitantes calificarán. Esto no es un compromiso de préstamo. Moxie Mortgage es una división de Nexa Lending. Nexa Lending y Axen Realty son compañías afiliadas. Cada una es una entidad legal separada con su propia administración y estructura de gobierno, y usar cualquiera de las dos compañías es opcional.", "· Licensed in 48 states · Equal Housing Lender.": "· Con licencia en 48 estados · Prestamista con Igualdad de Oportunidades de Vivienda.", "Step 1 of 2": "Paso 1 de 2", "Tell us who you are so your loan officer can flag your file for the Axen credit of up to $1,000. Next, you'll start your application.": "Dinos quién eres para que tu oficial de préstamos marque tu expediente para el crédito Axen de hasta $1,000. Después, empezarás tu solicitud.", "By clicking \"Continue to application,\" you agree that Moxie Mortgage, a division of Nexa Lending, may contact you by phone, text, or email at the information provided, including with automated technology. Consent is not a condition of any purchase or loan. Message and data rates may apply. Reply STOP to opt out.": "Al hacer clic en \"Continuar a la solicitud\", aceptas que Moxie Mortgage, una división de Nexa Lending, puede contactarte por teléfono, mensaje de texto o email a la información proporcionada, incluso con tecnología automatizada. El consentimiento no es una condición para ninguna compra o préstamo. Pueden aplicarse tarifas de mensajes y datos. Responde STOP para no recibir más mensajes.", "Continue to application": "Continuar a la solicitud"}, ATTR = {"Moxie Mortgage and Axen Realty Homebuyer Advantage": "Ventaja para compradores de Moxie Mortgage y Axen Realty", "Call Moxie Mortgage": "Llama a Moxie Mortgage", "Illustrative example: on a $300,000 loan with $9,000 in estimated closing costs, a $1,000 credit lowers closing costs to $8,000": "Ejemplo ilustrativo: en un préstamo de $300,000 con $9,000 en costos de cierre estimados, un crédito de $1,000 baja los costos de cierre a $8,000", "Why buyers trust Moxie": "Por qué los compradores confían en Moxie", "5 out of 5 stars": "5 de 5 estrellas", "Equal Housing Lender": "Prestamista con Igualdad de Oportunidades de Vivienda", "Close": "Cerrar"}, DYN = {"Required": "Obligatorio", "Enter a valid email": "Escribe un email válido", "Enter a 10-digit phone number": "Escribe un número de 10 dígitos", "Sending…": "Enviando…", "Something went wrong. Please try again or give us a call.": "Algo salió mal. Inténtalo de nuevo o llámanos.", "Saving your credit…": "Guardando tu crédito…", "Moxie client": "Cliente de Moxie", "on": "en", "reviews": "reseñas"}, TITLE = {"en": "Up to $1,000 Toward Closing Costs | Moxie Mortgage × Axen Realty", "es": "Hasta $1,000 para costos de cierre | Moxie Mortgage × Axen Realty"};
+  var lang = "en";
+  try { var q = new URLSearchParams(location.search).get("lang"); if (q === "es" || q === "en") lang = q; else if (localStorage.getItem("mxa_lang") === "es") lang = "es"; } catch (e) {}
+  window.mxaT = function (s) { return (lang === "es" && DYN[s]) || s; };
+  function norm(s) { return s.replace(/\u00a0/g, " ").replace(/\s+/g, " ").trim(); }
+  function apply(root) {
+    var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null), n, nodes = [];
+    while ((n = w.nextNode())) { var p = n.parentNode && n.parentNode.nodeName; if (p !== "SCRIPT" && p !== "STYLE") nodes.push(n); }
+    nodes.forEach(function (node) {
+      if (node.__mxaEn === undefined) node.__mxaEn = node.nodeValue;
+      var en = node.__mxaEn, k = norm(en);
+      if (!k) return;
+      if (lang === "en") { if (node.nodeValue !== en) node.nodeValue = en; return; }
+      var es = TEXT[k]; if (!es) return;
+      if (en.indexOf("\u00a0") > -1 && es.lastIndexOf(" ") > 0) { var i = es.lastIndexOf(" "); es = es.slice(0, i) + "\u00a0" + es.slice(i + 1); }
+      var lead = /^[\s\u00a0]/.test(en) ? " " : "", trail = /[\s\u00a0]$/.test(en) ? " " : "";
+      node.nodeValue = lead + es + trail;
+    });
+    root.querySelectorAll("[aria-label],[alt],[title],[placeholder]").forEach(function (el) {
+      ["aria-label", "alt", "title", "placeholder"].forEach(function (a) {
+        if (!el.hasAttribute(a)) return;
+        var key = "mxaEn_" + a.replace("-", "");
+        if (el.dataset[key] === undefined) el.dataset[key] = el.getAttribute(a);
+        var en = el.dataset[key];
+        el.setAttribute(a, lang === "es" && ATTR[en] ? ATTR[en] : en);
+      });
+    });
+  }
+  function setLang(l) {
+    lang = l === "es" ? "es" : "en";
+    try { localStorage.setItem("mxa_lang", lang); } catch (e) {}
+    var root = document.getElementById("mxa"); if (!root) return;
+    apply(root);
+    root.setAttribute("lang", lang);
+    if (!window.parent || window.parent === window) document.documentElement.lang = lang;
+    if (document.getElementById("mxa") === root && document.title && (document.title === TITLE.en || document.title === TITLE.es)) document.title = TITLE[lang];
+    root.querySelectorAll(".langsw button").forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-lang") === lang ? "true" : "false"); });
+    try { window.dispatchEvent(new Event("resize")); } catch (e) {}
+  }
+  function init() {
+    var root = document.getElementById("mxa"); if (!root) return;
+    root.addEventListener("click", function (ev) {
+      var b = ev.target.closest && ev.target.closest(".langsw button"); if (!b) return;
+      ev.preventDefault(); setLang(b.getAttribute("data-lang"));
+    });
+    setLang(lang);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
+})();
+</script><script>
 (function () {
   /* ======================= CONFIG ======================= */
   var MXA_CONFIG = {
@@ -631,8 +753,9 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
   var view = null; // parent's visible slice of this frame: { top, height }
   function toParent(msg) { if (framed) { try { window.parent.postMessage(Object.assign({ mxa: true }, msg), "*"); } catch (e) {} } }
   if (framed) {
-    root.classList.add("framed");
-    document.documentElement.classList.add("mxa-framed");
+    // lock scrolling and use frame layout only once the parent page confirms it resizes this frame
+    var managed = false;
+    var setManaged = function () { if (managed) return; managed = true; root.classList.add("framed"); document.documentElement.classList.add("mxa-framed"); };
     var lastH = 0;
     var sendHeight = function () {
       var h = Math.ceil(root.getBoundingClientRect().height);
@@ -644,7 +767,7 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
     sendHeight();
     window.addEventListener("message", function (ev) {
       var d = ev.data || {};
-      if (d.mxaParent && d.type === "viewport") { view = { top: d.top, height: d.height }; if (window.__mxaPlaceModal) window.__mxaPlaceModal(); }
+      if (d.mxaParent && d.type === "viewport") { setManaged(); view = { top: d.top, height: d.height }; if (window.__mxaPlaceModal) window.__mxaPlaceModal(); }
     });
     toParent({ type: "ready" });
   }
@@ -730,10 +853,10 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
   if (!reduce && hasIO) {
     root.classList.add("anim");
 
-    // count-up on the $5,000
+    // count-up on the headline amount
     var c = $(".count");
     if (c) {
-      var to = Number(c.getAttribute("data-to")) || 5000, start = null, dur = 1400;
+      var to = Number(c.getAttribute("data-to")) || 1000, start = null, dur = 1400;
       c.textContent = "$0";
       var step = function (t) {
         if (!start) start = t;
@@ -747,12 +870,12 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
     // closing-cost card: credit slides in, total counts down
     var card = $('[data-mxa="calc"]'), tot = $('[data-mxa="calc-total"]');
     if (card && tot) {
-      tot.textContent = "$20,000";
+      tot.textContent = "$9,000";
       new IntersectionObserver(function (en, obs) {
         if (!en[0].isIntersecting) return; obs.disconnect();
         setTimeout(function () {
           card.classList.add("go");
-          var s0 = null, from = 20000, to2 = 15000;
+          var s0 = null, from = 9000, to2 = 8000;
           var tick = function (t) {
             if (!s0) s0 = t;
             var p = Math.min((t - s0) / 2800, 1), e = p < .5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
@@ -836,9 +959,9 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
     };
     var check = function (el) {
       var v = el.value.trim();
-      if (!v) return setErr(el, "Required"), false;
-      if (el.type === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) return setErr(el, "Enter a valid email"), false;
-      if (el.type === "tel" && v.replace(/\D/g, "").length < 10) return setErr(el, "Enter a 10-digit phone number"), false;
+      if (!v) return setErr(el, mxaT("Required")), false;
+      if (el.type === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) return setErr(el, mxaT("Enter a valid email")), false;
+      if (el.type === "tel" && v.replace(/\D/g, "").length < 10) return setErr(el, mxaT("Enter a 10-digit phone number")), false;
       setErr(el, ""); return true;
     };
     $$("input[required],select[required]", form).forEach(function (el) {
@@ -868,7 +991,7 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
       if (!validate()) return;
       if (form.elements.company_website.value) return; // bot
       var c = contact(form);
-      btn.disabled = true; msg.textContent = "Sending…";
+      btn.disabled = true; msg.textContent = mxaT("Sending…");
       sendLead(Object.assign({ timeline: form.elements.timeline.value, axen_agent: form.elements.axen_agent.value }, c), TAG_CALL)
         .then(function () {
           remember(c);
@@ -879,7 +1002,7 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
         .catch(function (err) {
           console.warn("[MXA] Lead submit failed:", err);
           btn.disabled = false;
-          msg.textContent = "Something went wrong. Please try again or give us a call."; msg.className = "fmsg bad";
+          msg.textContent = mxaT("Something went wrong. Please try again or give us a call."); msg.className = "fmsg bad";
         });
     });
   }
@@ -891,14 +1014,14 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
     var lastFocus = null, pendingTrack = "";
     var goApply = function () { goTop(APPLY_URL); };
     var place = window.__mxaPlaceModal = function () {
-      if (!framed || modal.hidden) return;
+      if (!root.classList.contains("framed") || modal.hidden) return;
       var v = view || { top: Math.max(0, (window.scrollY || 0)), height: Math.min(window.innerHeight, 900) };
       modal.style.top = Math.max(0, v.top) + "px";
       modal.style.height = Math.max(420, v.height) + "px";
     };
     var open = function (trigger) {
       lastFocus = trigger; modal.hidden = false;
-      if (framed) { toParent({ type: "modal", open: true }); place(); }
+      if (root.classList.contains("framed")) { toParent({ type: "modal", open: true }); place(); }
       else document.documentElement.style.overflow = "hidden";
       var k = known();
       if (k) { cform.elements.name.value = k.name; cform.elements.phone.value = k.phone; cform.elements.email.value = k.email; }
@@ -935,7 +1058,7 @@ html.mxa-framed,html.mxa-framed body{margin:0;overflow:hidden}
       if (!cvalidate()) return;
       if (cform.elements.company_website.value) return goApply(); // bot: skip the lead, still let them through
       var c = contact(cform);
-      cbtn.disabled = true; cmsg.textContent = "Saving your credit…";
+      cbtn.disabled = true; cmsg.textContent = mxaT("Saving your credit…");
       var finish = function () { store.set("mxa_claimed", "1"); remember(c); goApply(); };
       // Never trap a buyer: if the script is slow or fails, continue to the application anyway.
       var timer = setTimeout(finish, 6000);
